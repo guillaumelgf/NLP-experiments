@@ -10,7 +10,7 @@ Simple NLP project
     - [ ] Bag of words
     - [ ] Random Forest (scikit-learn)
 - [ ] Serving (Flask)
-    - [ ] Basic
+    - [X] Basic
     - [ ] A/B Testing models
     - [ ] Load new models
   
@@ -23,3 +23,24 @@ Simple NLP project
   
 BUG: Vocabulary list needs to be made before splitting
 
+### How to make it work ?
+
+#### Installing
+```
+git clone https://github.com/guillaumelgf/NLP-for-fun.git
+cd NLP-for-fun
+pip -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+#### Training
+```
+python train.py
+```
+#### Starting flask app
+```
+set FLASK_APP=flask_app.py
+set FLASK_ENV=devlopment
+flask run
+```
+Then go to localhost:5000
